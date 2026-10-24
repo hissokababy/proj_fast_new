@@ -4,14 +4,43 @@ document.addEventListener('DOMContentLoaded', async () => {
   const languageButton = document.querySelector('#languageFlag');
   const languageMenu = document.querySelector('#languageMenu');
 
-  function getValue(dictionary, path) {
-    return path.split('.').reduce((value, part) => value?.[part], dictionary);
+function getValue(dictionary, path) {
+  if (!dictionary || !path) return undefined;
+
+  // Соответствие старых ключей новым
+  const aliases = {
+    teachersKicker: 'teachers.text_001',
+    teachersTitle: 'teachers.text_002',
+    teachersText: 'teachers.text_003',
+    teachersCta: 'teachers.text_004',
+
+    resultsKicker: 'results.text_001',
+    resultsTitle: 'results.text_002',
+    resultsText: 'results.text_003',
+    certNote: 'results.text_004',
+    resultsCta: 'results.text_006'
+  };
+
+  const key = aliases[path] || path;
+
+  // Ищем перевод по полному ключу
+  if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+    return dictionary[key];
   }
+
+  // Запасной вариант для вложенных объектов
+  return key.split('.').reduce(
+    (value, part) => value?.[part],
+    dictionary
+  );
+}
 
   async function loadTexts() {
     const response = await fetch('./texts.json');
     if (!response.ok) throw new Error(`texts.json: HTTP ${response.status}`);
     const data = await response.json();
+    console.log('Загруженный texts.json:', data);
+    console.log('Языки:', data.languages);
     dictionaries = {};
     for (const item of data.languages || []) {
       const code = Object.keys(item)[0];
@@ -35,8 +64,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.documentElement.lang = currentLanguage;
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
-      const value = getValue(dictionary, element.dataset.i18n);
-      if (typeof value === 'string') element.textContent = value;
+      const key = element.dataset.i18n;
+      const value = getValue(dictionary, key);
+
+      if (typeof value === 'string') {
+        element.textContent = value;
+      } else {
+        console.warn('Перевод не найден:', key, element);
+      }
     });
 
     document.querySelectorAll('[data-i18n-attr]').forEach(element => {
