@@ -6,7 +6,11 @@ function initInteractions() {
   const form=document.querySelector('#leadForm');
   if(form) form.addEventListener('submit',e=>{e.preventDefault();const s=document.querySelector('#successMsg');if(s)s.style.display='block';});
 
-  const dictionaries=window.FAST_EASY_TRANSLATIONS || {uz:{},ru:{}};
+  let dictionaries = { uz: {}, ru: {} };
+  fetch('./translations.json')
+    .then(response => { if (!response.ok) throw new Error('Не удалось загрузить translations.json'); return response.json(); })
+    .then(data => { dictionaries = data; let saved = 'uz'; try { saved = localStorage.getItem('fastEasyLanguage') || 'uz'; } catch (e) {} setLanguage(saved); })
+    .catch(error => console.error('Ошибка загрузки переводов:', error));
   const languageButton=document.querySelector('#languageFlag'), languageMenu=document.querySelector('#languageMenu');
   function setLanguage(lang){lang=lang==='ru'?'ru':'uz';document.documentElement.lang=lang;const dict=dictionaries[lang];
     const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
@@ -17,7 +21,7 @@ function initInteractions() {
     try{localStorage.setItem('fastEasyLanguage',lang)}catch(e){}
   }
   if(languageButton&&languageMenu){languageButton.addEventListener('click',e=>{e.stopPropagation();languageMenu.hidden=!languageMenu.hidden;languageButton.setAttribute('aria-expanded',String(!languageMenu.hidden));});languageMenu.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();setLanguage(b.dataset.lang);languageMenu.hidden=true;languageButton.setAttribute('aria-expanded','false')}));document.addEventListener('click',e=>{if(!e.target.closest('.languagePicker')){languageMenu.hidden=true;languageButton.setAttribute('aria-expanded','false')}})}
-  let initial='uz';try{initial=localStorage.getItem('fastEasyLanguage')||'uz'}catch(e){}setLanguage(initial);
+  // Переводы загружаются из translations.json выше; язык по умолчанию — узбекский.
 
   // Automatically move each horizontal rail; touch/trackpad scrolling remains available.
   ['centerCarousel','teachersCarousel','certCarousel','eventsCarousel','partnersCarousel'].forEach(id=>{const track=document.getElementById(id);if(!track)return;track.style.overflowX='auto';track.style.scrollBehavior='smooth';track.style.scrollSnapType='x mandatory';track.querySelectorAll(':scope > *').forEach(el=>el.style.scrollSnapAlign='start');let timer=null;const move=()=>{const max=track.scrollWidth-track.clientWidth;if(max<12)return;const item=track.querySelector(':scope > *');const step=item?item.getBoundingClientRect().width+18:track.clientWidth*.75;if(track.scrollLeft>=max-8)track.scrollTo({left:0,behavior:'smooth'});else track.scrollBy({left:Math.min(step,max-track.scrollLeft),behavior:'smooth'});};const start=()=>{if(timer)return;timer=setInterval(()=>{if(!track.matches(':hover'))move()},2600)};track.addEventListener('mouseenter',()=>{});start();window.addEventListener('load',move,{once:true});});
