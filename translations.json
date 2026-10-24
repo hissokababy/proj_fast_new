@@ -1,80 +1,116 @@
 {
-  "uz": {
-    "Курсы": "Kurslar",
-    "О центре": "Markaz haqida",
-    "Преподаватели": "O‘qituvchilar",
-    "Результаты": "Natijalar",
-    "Тарифы": "Narxlar",
-    "События": "Tadbirlar",
-    "Партнёры": "Hamkorlar",
-    "Контакты": "Aloqa",
-    "Записаться на урок ↗": "Darsga yozilish ↗",
-    "Учебный центр английского языка в Узбекистане": "O‘zbekistondagi ingliz tili o‘quv markazi",
-    "Открой новые возможности с английским": "Ingliz tili bilan yangi imkoniyatlarni oching",
-    "Определим твой уровень": "Darajangizni aniqlaymiz",
-    "Подберём подходящий курс": "Mos kursni tanlaymiz",
-    "Будем практиковаться регулярно": "Muntazam mashq qilamiz",
-    "Новые возможности с английским": "Ingliz tili bilan yangi imkoniyatlar",
-    "Люди, которые помогают расти": "Rivojlanishingizga yordam beradigan jamoa",
-    "Наши преподаватели": "Bizning o‘qituvchilar",
-    "Познакомься с командой FAST and EASY.": "FAST and EASY jamoasi bilan tanishing.",
-    "Цели становятся достижениями": "Maqsadlar yutuqlarga aylanadi",
-    "Результаты наших учеников": "O‘quvchilarimiz natijalari",
-    "Сертификаты и достижения учеников FAST and EASY.": "FAST and EASY o‘quvchilarining sertifikatlari va yutuqlari.",
-    "Хочу учиться у вас ↗": "Siz bilan o‘qishni xohlayman ↗",
-    "Хочу такой результат ↗": "Men ham shunday natija istayman ↗",
-    "Записаться на консультацию": "Maslahat uchun yozilish",
-    "Заполни поля — это займёт меньше минуты.": "Maydonlarni to‘ldiring — bir daqiqadan kam vaqt oladi.",
-    "Как тебя зовут?": "Ismingiz nima?",
-    "Твоё имя": "Ismingiz",
-    "Номер телефона": "Telefon raqami",
-    "Отправить заявку ↗": "Ariza yuborish ↗",
-    "Сделай первый шаг": "Birinchi qadamni qo‘ying",
-    "Готов начать свой путь в английском?": "Ingliz tilini o‘rganishni boshlashga tayyormisiz?",
-    "Как нас найти": "Bizni qanday topish mumkin",
-    "Частые вопросы": "Ko‘p beriladigan savollar",
-    "Можно ли начать с нуля?": "Noldan boshlash mumkinmi?",
-    "Сколько стоит обучение?": "O‘qish narxi qancha?",
-    "Как записаться?": "Qanday yozilish mumkin?",
-    "Learn today. Open new doors tomorrow.": "Bugun o‘rganing. Ertaga yangi imkoniyatlar oching."
-  },
-  "ru": {
-    "Kurslar": "Курсы",
-    "Markaz haqida": "О центре",
-    "O‘qituvchilar": "Преподаватели",
-    "Natijalar": "Результаты",
-    "Narxlar": "Тарифы",
-    "Tadbirlar": "События",
-    "Hamkorlar": "Партнёры",
-    "Aloqa": "Контакты",
-    "Darsga yozilish ↗": "Записаться на урок ↗",
-    "O‘zbekistondagi ingliz tili o‘quv markazi": "Учебный центр английского языка в Узбекистане",
-    "Ingliz tili bilan yangi imkoniyatlarni oching": "Открой новые возможности с английским",
-    "Darajangizni aniqlaymiz": "Определим твой уровень",
-    "Mos kursni tanlaymiz": "Подберём подходящий курс",
-    "Muntazam mashq qilamiz": "Будем практиковаться регулярно",
-    "Ingliz tili bilan yangi imkoniyatlar": "Новые возможности с английским",
-    "Rivojlanishingizga yordam beradigan jamoa": "Люди, которые помогают расти",
-    "Bizning o‘qituvchilar": "Наши преподаватели",
-    "FAST and EASY jamoasi bilan tanishing.": "Познакомься с командой FAST and EASY.",
-    "Maqsadlar yutuqlarga aylanadi": "Цели становятся достижениями",
-    "O‘quvchilarimiz natijalari": "Результаты наших учеников",
-    "FAST and EASY o‘quvchilarining sertifikatlari va yutuqlari.": "Сертификаты и достижения учеников FAST and EASY.",
-    "Siz bilan o‘qishni xohlayman ↗": "Хочу учиться у вас ↗",
-    "Men ham shunday natija istayman ↗": "Хочу такой результат ↗",
-    "Maslahat uchun yozilish": "Записаться на консультацию",
-    "Maydonlarni to‘ldiring — bir daqiqadan kam vaqt oladi.": "Заполни поля — это займёт меньше минуты.",
-    "Ismingiz nima?": "Как тебя зовут?",
-    "Ismingiz": "Твоё имя",
-    "Telefon raqami": "Номер телефона",
-    "Ariza yuborish ↗": "Отправить заявку ↗",
-    "Birinchi qadamni qo‘ying": "Сделай первый шаг",
-    "Ingliz tilini o‘rganishni boshlashga tayyormisiz?": "Готов начать свой путь в английском?",
-    "Bizni qanday topish mumkin": "Как нас найти",
-    "Ko‘p beriladigan savollar": "Частые вопросы",
-    "Noldan boshlash mumkinmi?": "Можно ли начать с нуля?",
-    "O‘qish narxi qancha?": "Сколько стоит обучение?",
-    "Qanday yozilish mumkin?": "Как записаться?",
-    "Bugun o‘rganing. Ertaga yangi imkoniyatlar oching.": "Учись сегодня. Открывай новые возможности завтра."
-  }
+    "languages": [
+        {
+            "ru": {
+                "title": "Русский",
+                "flag": "🇷🇺",
+                "categories": [
+                    {
+                        "Kurslar": "Курсы",
+                        "Markaz haqida": "О центре",
+                        "O‘qituvchilar": "Преподаватели",
+                        "Natijalar": "Результаты",
+                        "Narxlar": "Тарифы",
+                        "Tadbirlar": "События",
+                        "Hamkorlar": "Партнёры",
+                        "Aloqa": "Контакты"
+                    },
+                    {
+                        "Darsga yozilish ↗": "Записаться на урок ↗",
+                        "O‘zbekistondagi ingliz tili o‘quv markazi": "Учебный центр английского языка в Узбекистане",
+                        "Ingliz tili bilan yangi imkoniyatlarni oching": "Открой новые возможности с английским",
+                        "Darajangizni aniqlaymiz": "Определим твой уровень",
+                        "Mos kursni tanlaymiz": "Подберём подходящий курс",
+                        "Muntazam mashq qilamiz": "Будем практиковаться регулярно",
+                        "Ingliz tili bilan yangi imkoniyatlar": "Новые возможности с английским",
+                        "Rivojlanishingizga yordam beradigan jamoa": "Люди, которые помогают расти"
+                    },
+                    {
+                        "Bizning o‘qituvchilar": "Наши преподаватели",
+                        "FAST and EASY jamoasi bilan tanishing.": "Познакомься с командой FAST and EASY.",
+                        "Maqsadlar yutuqlarga aylanadi": "Цели становятся достижениями",
+                        "O‘quvchilarimiz natijalari": "Результаты наших учеников",
+                        "FAST and EASY o‘quvchilarining sertifikatlari va yutuqlari.": "Сертификаты и достижения учеников FAST and EASY.",
+                        "Siz bilan o‘qishni xohlayman ↗": "Хочу учиться у вас ↗",
+                        "Men ham shunday natija istayman ↗": "Хочу такой результат ↗",
+                        "Maslahat uchun yozilish": "Записаться на консультацию"
+                    },
+                    {
+                        "Maydonlarni to‘ldiring — bir daqiqadan kam vaqt oladi.": "Заполни поля — это займёт меньше минуты.",
+                        "Ismingiz nima?": "Как тебя зовут?",
+                        "Ismingiz": "Твоё имя",
+                        "Telefon raqami": "Номер телефона",
+                        "Ariza yuborish ↗": "Отправить заявку ↗",
+                        "Birinchi qadamni qo‘ying": "Сделай первый шаг",
+                        "Ingliz tilini o‘rganishni boshlashga tayyormisiz?": "Готов начать свой путь в английском?",
+                        "Bizni qanday topish mumkin": "Как нас найти"
+                    },
+                    {
+                        "Ko‘p beriladigan savollar": "Частые вопросы",
+                        "Noldan boshlash mumkinmi?": "Можно ли начать с нуля?",
+                        "O‘qish narxi qancha?": "Сколько стоит обучение?",
+                        "Qanday yozilish mumkin?": "Как записаться?",
+                        "Bugun o‘rganing. Ertaga yangi imkoniyatlar oching.": "Учись сегодня. Открывай новые возможности завтра."
+                    }
+                ]
+            }
+        },
+        {
+            "uz": {
+                "title": "O‘zbekcha",
+                "flag": "🇺🇿",
+                "categories": [
+                    {
+                        "header": "O‘zbekistondagi ingliz tili o‘quv markazi"
+                    },
+                    {
+                        "Курсы": "Kurslar",
+                        "О центре": "Markaz haqida",
+                        "Преподаватели": "O‘qituvchilar",
+                        "Результаты": "Natijalar",
+                        "Тарифы": "Narxlar",
+                        "События": "Tadbirlar",
+                        "Партнёры": "Hamkorlar",
+                        "Контакты": "Aloqa"
+                    },
+                    {
+                        "Записаться на урок ↗": "Darsga yozilish ↗",
+                        "Открой новые возможности с английским": "Ingliz tili bilan yangi imkoniyatlarni oching",
+                        "Определим твой уровень": "Darajangizni aniqlaymiz",
+                        "Подберём подходящий курс": "Mos kursni tanlaymiz",
+                        "Будем практиковаться регулярно": "Muntazam mashq qilamiz",
+                        "Новые возможности с английским": "Ingliz tili bilan yangi imkoniyatlar",
+                        "Люди, которые помогают расти": "Rivojlanishingizga yordam beradigan jamoa",
+                        "Наши преподаватели": "Bizning o‘qituvchilar"
+                    },
+                    {
+                        "Познакомься с командой FAST and EASY.": "FAST and EASY jamoasi bilan tanishing.",
+                        "Цели становятся достижениями": "Maqsadlar yutuqlarga aylanadi",
+                        "Результаты наших учеников": "O‘quvchilarimiz natijalari",
+                        "Сертификаты и достижения учеников FAST and EASY.": "FAST and EASY o‘quvchilarining sertifikatlari va yutuqlari.",
+                        "Хочу учиться у вас ↗": "Siz bilan o‘qishni xohlayman ↗",
+                        "Хочу такой результат ↗": "Men ham shunday natija istayman ↗",
+                        "Записаться на консультацию": "Maslahat uchun yozilish",
+                        "Заполни поля — это займёт меньше минуты.": "Maydonlarni to‘ldiring — bir daqiqadan kam vaqt oladi."
+                    },
+                    {
+                        "Как тебя зовут?": "Ismingiz nima?",
+                        "Твоё имя": "Ismingiz",
+                        "Номер телефона": "Telefon raqami",
+                        "Отправить заявку ↗": "Ariza yuborish ↗",
+                        "Сделай первый шаг": "Birinchi qadamni qo‘ying",
+                        "Готов начать свой путь в английском?": "Ingliz tilini o‘rganishni boshlashga tayyormisiz?",
+                        "Как нас найти": "Bizni qanday topish mumkin",
+                        "Частые вопросы": "Ko‘p beriladigan savollar"
+                    },
+                    {
+                        "Можно ли начать с нуля?": "Noldan boshlash mumkinmi?",
+                        "Сколько стоит обучение?": "O‘qish narxi qancha?",
+                        "Как записаться?": "Qanday yozilish mumkin?",
+                        "Learn today. Open new doors tomorrow.": "Bugun o‘rganing. Ertaga yangi imkoniyatlar oching."
+                    }
+                ]
+            }
+        }
+    ]
 }

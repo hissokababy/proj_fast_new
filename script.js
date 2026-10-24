@@ -9,7 +9,7 @@ function initInteractions() {
   let dictionaries = { uz: {}, ru: {} };
   fetch('./translations.json')
     .then(response => { if (!response.ok) throw new Error('Не удалось загрузить translations.json'); return response.json(); })
-    .then(data => { dictionaries = data; let saved = 'uz'; try { saved = localStorage.getItem('fastEasyLanguage') || 'uz'; } catch (e) {} setLanguage(saved); })
+    .then(data => { dictionaries = Object.fromEntries((data.languages || []).map(item => { const code = Object.keys(item)[0]; const language = item[code]; return [code, Object.assign({}, ...(language.categories || []))]; })); let saved = 'uz'; try { saved = localStorage.getItem('fastEasyLanguage') || 'uz'; } catch (e) {} setLanguage(saved); })
     .catch(error => console.error('Ошибка загрузки переводов:', error));
   const languageButton=document.querySelector('#languageFlag'), languageMenu=document.querySelector('#languageMenu');
   function setLanguage(lang){lang=lang==='ru'?'ru':'uz';document.documentElement.lang=lang;const dict=dictionaries[lang];
